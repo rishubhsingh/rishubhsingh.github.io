@@ -4,8 +4,9 @@ const fontweights = [300, 400]
 
 // Color properties
 const basecolor = "#333";
-const accentcolor = "#34c";
+const accentcolor = "#56f";
 const highlightcolor = "#111";
+const othercolor = "#00f";
 
 // const basecolor = "#888";
 // const accentcolor = "#222";
@@ -32,7 +33,7 @@ const menudecoration = "none";
 // const menuhoverdecoration = "none"; //none, underline, overline, dotted, color (https://www.w3schools.com/cssref/pr_text_text-decoration.asp)
 
 // Header properties
-const headercolor = accentcolor;
+const headercolor = othercolor;
 const headerfontsize = "18pt";
 const headerdecoration = "none";
 const namecolor = highlightcolor;
@@ -45,6 +46,13 @@ const ptitlefontsize = bodyfontsize;
 const ptitleweight = bodyfontweight;
 const ptitledecoration = "none";
 const ptitlestyle = "normal";
+
+// Project properties
+const projecttitlecolor = othercolor;
+const projecttitlefontsize = bodyfontsize;
+const projecttitleweight = bodyfontweight;
+const projecttitledecoration = "none";
+const projecttitlestyle = "normal";
 
 const authorcolor = accentcolor;
 const authorweight = bodyfontweight;
@@ -102,6 +110,12 @@ $(".papertitle").css("font-size", ptitlefontsize);
 $(".papertitle").css("font-weight", ptitleweight);
 $(".papertitle").css("text-decoration", ptitledecoration);
 $(".papertitle").css("font-style", ptitlestyle);
+
+$(".projecttitle").css("color", projecttitlecolor);
+$(".projecttitle").css("font-size", projecttitlefontsize);
+$(".projecttitle").css("font-weight", projecttitleweight);
+$(".projecttitle").css("text-decoration", projecttitledecoration);
+$(".projecttitle").css("font-style", projecttitlestyle);
 
 $(".thisauthor").css("color", selfcolor);
 $(".thisauthor").css("font-weight", selfweight);
