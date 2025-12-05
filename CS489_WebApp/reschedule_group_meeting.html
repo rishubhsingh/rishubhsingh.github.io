@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Synapsis - Welcome to Network App</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#137fec",
+            "background-light": "#f6f7f8",
+            "background-dark": "#101922",
+            "foreground-light": "#111418",
+            "foreground-dark": "#e8eef3",
+            "card-light": "#ffffff",
+            "card-dark": "#1b2734",
+            "border-light": "#e3e7eb",
+            "border-dark": "#304050"
+          },
+          fontFamily: {
+            "display": ["Manrope", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings:
+      'FILL' 0,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 24
+    }
+  </style>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="flex flex-col min-h-screen">
+<header class="sticky top-0 z-10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm border-b border-subtle-light/20 dark:border-subtle-dark/20">
+<div class="container mx-auto px-6 sm:px-8 lg:px-12 max-w-6xl">
+<div class="flex items-center justify-between h-16">
+<div class="flex items-center gap-3">
+  <img src="logo.png" alt="Synapsis logo" class="w-8 h-8 object-contain" />
+  <h1 class="text-xl font-bold">Synapsis</h1>
+</div>
+<nav class="hidden md:flex items-center gap-6">
+<a class="text-sm font-bold text-primary" href="#">Home</a>
+<a class="text-sm font-medium text-subtle-light dark:text-subtle-dark hover:text-primary dark:hover:text-primary transition-colors" href="#">Meetings</a>
+<a class="text-sm font-medium text-subtle-light dark:text-subtle-dark hover:text-primary dark:hover:text-primary transition-colors" href="#">People</a>
+<a class="text-sm font-medium text-subtle-light dark:text-subtle-dark hover:text-primary dark:hover:text-primary transition-colors" href="#">Topics</a>
+</nav>
+<div class="flex items-center gap-3">
+<button class="flex items-center justify-center size-10 rounded-full bg-background-light dark:bg-background-dark hover:bg-primary/10 dark:hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined text-subtle-light dark:text-subtle-dark">notifications</span>
+</button>
+<div class="size-10 rounded-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCF0ahtj1Oldzv7-CmmUEMKhiVZ30h4njzeGMmLj9JLUZfqcYS1Fz90qadTVR5BUDaCl_xaNb1yFjK1IBFULmHiHtCJPebXSzy4xOAIjuGCjQW6SkCVbzhrSfoD-R3R6N7PoDGsehL8K3KETCC-QCkpndCG9lkWht0iDSov4GRlUfIXD41JqquW3Pp_hPo2XK60SwnrooH62AUewfPXIGvRbiNiPzFoT4XBBEdnAf3Sh2bQo5uWvWw7jm5EgDKBFtY1PbWMDa-S8YQ");'></div>
+</div>
+</div>
+</div>
+</header>
+<main class="flex flex-1 justify-center py-12 px-4 sm:px-6 lg:px-8">
+<div class="w-full max-w-lg space-y-8">
+<div class="text-center">
+<h2 class="text-3xl font-extrabold text-gray-900 dark:text-white">Reschedule Meeting</h2>
+<p class="mt-2 text-sm text-gray-600 dark:text-gray-400">
+                            You're still meeting with your current group. Suggest a new date, time, and location for your next meeting. We'll send the request to your meeting members.
+                        </p>
+</div>
+<form action="#" class="mt-8 space-y-6 bg-white dark:bg-gray-900/50 p-8 rounded-xl shadow-sm border border-gray-200 dark:border-gray-800" method="POST">
+<div class="space-y-6">
+<div class="relative">
+<label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2" for="date">Date</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 dark:text-gray-500">calendar_today</span>
+<input class="form-input block w-full rounded-lg border-gray-300 dark:border-gray-700 bg-background-light dark:bg-background-dark py-3 pl-11 pr-4 text-gray-900 dark:text-white placeholder:text-gray-500 dark:placeholder:text-gray-400 focus:ring-primary focus:border-primary" id="date" name="date" placeholder="Select date" type="text"/>
+</div>
+</div>
+<div class="relative">
+<label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2" for="time">Time</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 dark:text-gray-500">schedule</span>
+<input class="form-input block w-full rounded-lg border-gray-300 dark:border-gray-700 bg-background-light dark:bg-background-dark py-3 pl-11 pr-4 text-gray-900 dark:text-white placeholder:text-gray-500 dark:placeholder:text-gray-400 focus:ring-primary focus:border-primary" id="time" name="time" placeholder="Select time" type="text"/>
+</div>
+</div>
+<div class="relative">
+<label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2" for="location">Location</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 dark:text-gray-500">location_on</span>
+<input class="form-input block w-full rounded-lg border-gray-300 dark:border-gray-700 bg-background-light dark:bg-background-dark py-3 pl-11 pr-4 text-gray-900 dark:text-white placeholder:text-gray-500 dark:placeholder:text-gray-400 focus:ring-primary focus:border-primary" id="location" name="location" placeholder="Select location" type="text"/>
+</div>
+</div>
+</div>
+<div>
+<button class="group relative flex w-full justify-center rounded-lg border border-transparent bg-primary py-3 px-4 text-sm font-semibold text-white hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 dark:focus:ring-offset-background-dark transition-all duration-300" type="submit">
+                                Reschedule
+                            </button>
+</div>
+</form>
+</div>
+</main>
+</div>
+</div>
+
+</body></html>

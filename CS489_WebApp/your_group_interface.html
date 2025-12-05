@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Synapsis - Welcome to Network App</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#137fec",
+            "background-light": "#f6f7f8",
+            "background-dark": "#101922",
+            "foreground-light": "#111418",
+            "foreground-dark": "#e8eef3",
+            "card-light": "#ffffff",
+            "card-dark": "#1b2734",
+            "border-light": "#e3e7eb",
+            "border-dark": "#304050"
+          },
+          fontFamily: {
+            "display": ["Manrope", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings:
+      'FILL' 0,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 24
+    }
+  </style>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="flex flex-col min-h-screen">
+<header class="sticky top-0 z-10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm border-b border-subtle-light/20 dark:border-subtle-dark/20">
+<div class="container mx-auto px-6 sm:px-8 lg:px-12 max-w-6xl">
+<div class="flex items-center justify-between h-16">
+<div class="flex items-center gap-3">
+  <img src="logo.png" alt="Synapsis logo" class="w-8 h-8 object-contain" />
+  <h1 class="text-xl font-bold">Synapsis</h1>
+</div>
+<nav class="hidden md:flex items-center gap-6">
+<a class="text-sm font-bold text-primary" href="#">Home</a>
+<a class="text-sm font-medium text-subtle-light dark:text-subtle-dark hover:text-primary dark:hover:text-primary transition-colors" href="#">Meetings</a>
+<a class="text-sm font-medium text-subtle-light dark:text-subtle-dark hover:text-primary dark:hover:text-primary transition-colors" href="#">People</a>
+<a class="text-sm font-medium text-subtle-light dark:text-subtle-dark hover:text-primary dark:hover:text-primary transition-colors" href="#">Topics</a>
+</nav>
+<div class="flex items-center gap-3">
+<button class="flex items-center justify-center size-10 rounded-full bg-background-light dark:bg-background-dark hover:bg-primary/10 dark:hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined text-subtle-light dark:text-subtle-dark">notifications</span>
+</button>
+<div class="size-10 rounded-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCF0ahtj1Oldzv7-CmmUEMKhiVZ30h4njzeGMmLj9JLUZfqcYS1Fz90qadTVR5BUDaCl_xaNb1yFjK1IBFULmHiHtCJPebXSzy4xOAIjuGCjQW6SkCVbzhrSfoD-R3R6N7PoDGsehL8K3KETCC-QCkpndCG9lkWht0iDSov4GRlUfIXD41JqquW3Pp_hPo2XK60SwnrooH62AUewfPXIGvRbiNiPzFoT4XBBEdnAf3Sh2bQo5uWvWw7jm5EgDKBFtY1PbWMDa-S8YQ");'></div>
+</div>
+</div>
+</div>
+</header>
+<main class="flex-grow container mx-auto px-6 py-12">
+<div class="max-w-4xl mx-auto">
+<div class="mb-8">
+<h2 class="text-4xl font-bold text-gray-900 dark:text-white">Recurring Networking Group: <span class="text-primary">AI in Robotics</span></h2>
+</div>
+<div class="bg-white dark:bg-background-dark/50 rounded-xl shadow-lg p-8 space-y-8">
+<div>
+<h3 class="text-xl font-bold mb-4 text-gray-900 dark:text-white">Participants</h3>
+<div class="flex -space-x-2">
+<div class="w-12 h-12 rounded-full bg-cover bg-center border-2 border-white dark:border-background-dark" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCiTzjVtbXXN1EIJ48GrFeKEktk3Q7HjO0vLk-URbdoS7MWXhDGidxr1TqVS8LtJRrIMpAk5cr3WNg-ZP1rWkhXcVZMn6HiSgl-KbI3GOGT0Bqa7ehygbAtX-TtimFA_dXB75LCjlShVlEi5Gl88ucFiI6Z9PeTciTqwp9eAk0YSTB3n8L3s0W-G8laaniJK1jbvb4_IlOAW0ppWOZpt9s63x5r-wEgLrnCK3WWmOn2Zk-dW7IGyrDel0YrEuvwfF8Bg8QXUhiJlqw");'></div>
+<div class="w-12 h-12 rounded-full bg-cover bg-center border-2 border-white dark:border-background-dark" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDy1PQYQe6i-FkSWs5ONLRQ7hCQBoBfi4Ur1CNbePTbpop2No_7qoQq6BJTTTtb4_33xhHLAinVoUB1ImgznnlGWmIqwZ0XY-qdOeRJk8ha6eRP-moatK4FPY-LY9Ro76nAo1glKCKe__7io2g4xYV8gGNrB2vwhkvq7X24lC4dQdDgHieSWh6VZ_7ubZOgbxUktS2q6Osakxf9pf_t7wOuUkfzQEyuNxYJozvJC1BvL5gynBl7NWWMzutX_I3N0EhQLuQ7hLnR4ZY");'></div>
+<div class="w-12 h-12 rounded-full bg-cover bg-center border-2 border-white dark:border-background-dark" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDclnnbflMA7KOIf-CLdmJXXdzyMzcAx4QyMVAAGnaw-j5Nr8JTfoRfDPCFFuZcbSrR0Ntc0H3zOgydYpNJVxA0ng9IV4aYWvl8PlW0UduyAKP-cKuXDLPQ7-0OUbQZPkvsjol_6HWcB8DTjWMB0g44vc1L6Nmw1A1tbxuavTGeqYhahpMYNcxMKLFJi1FFPHp-rhR9lDl-nU42GCPmxddSd4eSor8SgtYLZjMivRmHXaRC90WoDuldBC57I4BLZZJJ_SFpJOEOnGw");'></div>
+<div class="w-12 h-12 rounded-full bg-cover bg-center border-2 border-white dark:border-background-dark" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBVfBm8gO3pcMpO5JgSC3wIdCye7NVL6qTqLb1JEtG3mbYJo_pj23hjuk9QTzaW6bwUd_UzXZ6uw059vQUjXMZAarR64UOF8f0BtXoVzk1Mi8rXjLpRiGqCQHiedR5574gsVjSq8InJCWiDpetvEL7_mkJ3qfs3PV7C9FWbxB-vkJh6_eF1wbXg7gJ1nPLPeLlr0OR26DsAxxDc9oE4CbxBxSyVZNukJ9ejHZzv4J6wdmJgO7X5uxuvuNtFU3zK-U9BRPMPOUvLQ1k");'></div>
+<div class="w-12 h-12 rounded-full bg-cover bg-center border-2 border-white dark:border-background-dark" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDHWF31-io8lagr0FnPt0A4x0GtMdnOdVk-t5EiskQ51AQguWKqtNlzamgj6GfMRim65Aef6oR3kKCrgE_Bc0Pg25FVkm5SUG31SYxsX1CSohJI6VJ4URj2OmQ8ddga09w3Q9VLkOuEr8rYq4H1fKg_3fshvV8pvsdUVMP-c-Gl3Y1A9mse3p9CI-kcgWrQgzUzp_Se42eH4vDkEItYq7TqSpd1JRhIA1GJdYQDVaUz45_RQIfFw7XGaDhisVD1VZG4frVg1kFVcQ8");'></div>
+</div>
+</div>
+<div>
+<h3 class="text-xl font-bold mb-4 text-gray-900 dark:text-white">Location Options</h3>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+<label class="relative flex items-center justify-center p-4 rounded-lg cursor-pointer bg-background-light dark:bg-background-dark has-[:checked]:bg-primary has-[:checked]:text-white transition-all duration-200">
+<input class="absolute opacity-0" name="location" type="radio"/>
+<span class="text-sm font-semibold">EPFL Campus</span>
+</label>
+<label class="relative flex items-center justify-center p-4 rounded-lg cursor-pointer bg-background-light dark:bg-background-dark has-[:checked]:bg-primary has-[:checked]:text-white transition-all duration-200">
+<input class="absolute opacity-0" name="location" type="radio"/>
+<span class="text-sm font-semibold">Online</span>
+</label>
+<label class="relative flex items-center justify-center p-4 rounded-lg cursor-pointer bg-background-light dark:bg-background-dark has-[:checked]:bg-primary has-[:checked]:text-white transition-all duration-200">
+<input class="absolute opacity-0" name="location" type="radio"/>
+<span class="text-sm font-semibold">Cafe in Lausanne</span>
+</label>
+</div>
+</div>
+<div>
+<h3 class="text-xl font-bold mb-4 text-gray-900 dark:text-white">Timing Preferences</h3>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+<label class="relative flex items-center justify-center p-4 rounded-lg cursor-pointer bg-background-light dark:bg-background-dark has-[:checked]:bg-primary has-[:checked]:text-white transition-all duration-200">
+<input class="absolute opacity-0" name="timing" type="radio"/>
+<span class="text-sm font-semibold">This week</span>
+</label>
+<label class="relative flex items-center justify-center p-4 rounded-lg cursor-pointer bg-background-light dark:bg-background-dark has-[:checked]:bg-primary has-[:checked]:text-white transition-all duration-200">
+<input class="absolute opacity-0" name="timing" type="radio"/>
+<span class="text-sm font-semibold">Next week</span>
+</label>
+<label class="relative flex items-center justify-center p-4 rounded-lg cursor-pointer bg-background-light dark:bg-background-dark has-[:checked]:bg-primary has-[:checked]:text-white transition-all duration-200">
+<input class="absolute opacity-0" name="timing" type="radio"/>
+<span class="text-sm font-semibold">Flexible</span>
+</label>
+</div>
+</div>
+<div class="flex justify-end pt-4">
+<button class="bg-primary text-white font-bold py-3 px-6 rounded-lg hover:bg-primary/90 transition-colors duration-200">
+              Submit Preferences
+            </button>
+</div>
+</div>
+</div>
+</main>
+</div>
+
+</body></html>

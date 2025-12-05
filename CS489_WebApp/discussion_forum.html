@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Synapsis Discussion Forum — EPFL Research</title>
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin href="https://fonts.gstatic.com" rel="preconnect" />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: '#137fec',
+            'background-light': '#f6f7f8',
+            'background-dark': '#101922',
+            'hn-yellow': '#ff6600'
+          },
+          fontFamily: { display: ['Manrope', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <style>
+    /* Tiny HN-like styling overrides */
+    .hn-title { font-family: 'Manrope', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; }
+    .score { color: #828282; font-size: 0.9rem; }
+    .subtle { color: #6b7280; }
+    .hn-link { color: #0b5cff; text-decoration: none; }
+    .hn-link:hover { text-decoration: underline; }
+  </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-foreground-light dark:text-foreground-dark">
+  <div class="container mx-auto max-w-4xl px-4 py-8">
+    <header class="mb-6 flex items-center justify-between">
+        <div class="flex items-center gap-3">
+        <img src="logo.png" alt="EPFL logo" class="w-8 h-8 object-contain" />
+        <h1 class="hn-title text-2xl font-extrabold">Synapsis Research Forum</h1>
+      </div>
+      <nav class="hidden sm:flex gap-3 text-sm">
+        <a href="welcome_to_network_app.html" class="text-subtle hover:text-primary">Home</a>
+        <a href="discover_topics.html" class="text-subtle hover:text-primary">Discover</a>
+        <a href="discussion_forum.html" class="text-subtle hover:text-primary">Forum</a>
+      </nav>
+    </header>
+
+    <section class="mb-4">
+      <div class="flex items-center justify-between">
+        <h2 class="text-lg font-semibold">Top research discussions</h2>
+        <div class="flex items-center gap-3">
+          <div class="text-sm text-subtle">Sorted by: <span class="font-medium">Hot</span></div>
+          <div class="text-sm text-subtle">Filter by: </div>
+          <label for="tag-filter" class="sr-only">Filter by tag</label>
+          <select id="tag-filter" class="text-sm bg-white dark:bg-background-dark border border-subtle-light/20 dark:border-subtle-dark/20 rounded px-2 py-1">
+            <option value="">All tags</option>
+            <option value="Machine Learning">Machine Learning</option>
+            <option value="Computer Graphics">Computer Graphics</option>
+            <option value="Privacy">Privacy</option>
+            <option value="Robotics">Robotics</option>
+            <option value="HRI">HRI</option>
+            <option value="Call">Call for collaborators</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mock list similar to Hacker News -->
+    <ol class="list-decimal ml-6 space-y-4">
+      <!-- item 1 -->
+      <li data-tags="Machine Learning,Robotics">
+        <div class="flex items-start gap-3">
+          <div class="w-8 text-right">
+            <div class="score">152</div>
+          </div>
+          <div class="flex-1">
+            <a class="hn-link text-base font-semibold" href="#">Autonomous soft-robotic morphologies inspired by cephalopod skin</a>
+            <div class="subtle text-xs mt-1">by <span class="font-medium">A. Researcher</span> — <span class="inline-block px-2 py-0.5 rounded text-xs bg-background-light dark:bg-background-dark border">Machine Learning</span> — <span class="text-subtle">18 comments</span></div>
+            <div class="text-sm text-subtle mt-1">Short preview: We demonstrate how compliant materials and evolved controllers can produce versatile locomotion without explicit models...</div>
+          </div>
+        </div>
+      </li>
+
+      <!-- item 2 -->
+      <li data-tags="Computer Graphics">
+        <div class="flex items-start gap-3">
+          <div class="w-8 text-right">
+            <div class="score">98</div>
+          </div>
+          <div class="flex-1">
+            <a class="hn-link text-base font-semibold" href="#">Scaling differentiable rendering for neural scene representations</a>
+            <div class="subtle text-xs mt-1">by <span class="font-medium">Lab X</span> — <span class="text-subtle">12 comments</span></div>
+          </div>
+        </div>
+      </li>
+
+      <!-- item 3 -->
+      <li data-tags="Privacy,Machine Learning">
+        <div class="flex items-start gap-3">
+          <div class="w-8 text-right"><div class="score">64</div></div>
+          <div class="flex-1">
+            <a class="hn-link text-base font-semibold" href="#">Privacy-preserving federated learning across research labs</a>
+            <div class="subtle text-xs mt-1">by <span class="font-medium">CS Dept.</span> — <span class="text-subtle">9 comments</span></div>
+          </div>
+        </div>
+      </li>
+
+      <!-- item 4 -->
+      <li data-tags="Robotics">
+        <div class="flex items-start gap-3">
+          <div class="w-8 text-right"><div class="score">34</div></div>
+          <div class="flex-1">
+            <a class="hn-link text-base font-semibold" href="#">Bio-inspired control algorithms for micro-robots</a>
+            <div class="subtle text-xs mt-1">by <span class="font-medium">Robotics Lab</span> — <span class="text-subtle">4 comments</span></div>
+          </div>
+        </div>
+      </li>
+
+      <!-- more items -->
+      <li data-tags="HRI,Call">
+        <div class="flex items-start gap-3">
+          <div class="w-8 text-right"><div class="score">12</div></div>
+          <div class="flex-1">
+            <a class="hn-link text-base font-semibold" href="#">Call for collaborators: human-robot interaction study</a>
+            <div class="subtle text-xs mt-1">by <span class="font-medium">PhD Student</span> — <span class="text-subtle">2 comments</span></div>
+          </div>
+        </div>
+      </li>
+    </ol>
+
+    <div class="mt-8 flex items-center justify-between">
+      <div class="text-sm text-subtle">Page 1 | <a href="#" class="hn-link">More</a></div>
+    </div>
+    
+    <script>
+      // Simple client-side tag filter for the mock forum
+      (function(){
+        const sel = document.getElementById('tag-filter');
+        if(!sel) return;
+        const items = Array.from(document.querySelectorAll('ol > li'));
+        function applyFilter(){
+          const tag = sel.value.trim();
+          items.forEach(li => {
+            const tags = (li.getAttribute('data-tags') || '').split(',').map(s=>s.trim()).filter(Boolean);
+            if(!tag || tags.includes(tag)){
+              li.style.display = '';
+            } else {
+              li.style.display = 'none';
+            }
+          });
+        }
+        sel.addEventListener('change', applyFilter);
+      })();
+    </script>
+  </div>
+</body>
+</html>

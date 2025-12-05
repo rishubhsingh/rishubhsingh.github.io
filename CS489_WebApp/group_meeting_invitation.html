@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Synapsis - Welcome to Network App</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#137fec",
+            "background-light": "#f6f7f8",
+            "background-dark": "#101922",
+            "foreground-light": "#111418",
+            "foreground-dark": "#e8eef3",
+            "card-light": "#ffffff",
+            "card-dark": "#1b2734",
+            "border-light": "#e3e7eb",
+            "border-dark": "#304050"
+          },
+          fontFamily: {
+            "display": ["Manrope", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings:
+      'FILL' 0,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 24
+    }
+  </style>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="flex flex-col min-h-screen">
+<header class="sticky top-0 z-10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm border-b border-subtle-light/20 dark:border-subtle-dark/20">
+<div class="container mx-auto px-6 sm:px-8 lg:px-12 max-w-6xl">
+<div class="flex items-center justify-between h-16">
+<div class="flex items-center gap-3">
+  <img src="logo.png" alt="Synapsis logo" class="w-8 h-8 object-contain" />
+  <h1 class="text-xl font-bold">Synapsis</h1>
+</div>
+<nav class="hidden md:flex items-center gap-6">
+<a class="text-sm font-bold text-primary" href="#">Home</a>
+<a class="text-sm font-medium text-subtle-light dark:text-subtle-dark hover:text-primary dark:hover:text-primary transition-colors" href="#">Meetings</a>
+<a class="text-sm font-medium text-subtle-light dark:text-subtle-dark hover:text-primary dark:hover:text-primary transition-colors" href="#">People</a>
+<a class="text-sm font-medium text-subtle-light dark:text-subtle-dark hover:text-primary dark:hover:text-primary transition-colors" href="#">Topics</a>
+</nav>
+<div class="flex items-center gap-3">
+<button class="flex items-center justify-center size-10 rounded-full bg-background-light dark:bg-background-dark hover:bg-primary/10 dark:hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined text-subtle-light dark:text-subtle-dark">notifications</span>
+</button>
+<div class="size-10 rounded-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCF0ahtj1Oldzv7-CmmUEMKhiVZ30h4njzeGMmLj9JLUZfqcYS1Fz90qadTVR5BUDaCl_xaNb1yFjK1IBFULmHiHtCJPebXSzy4xOAIjuGCjQW6SkCVbzhrSfoD-R3R6N7PoDGsehL8K3KETCC-QCkpndCG9lkWht0iDSov4GRlUfIXD41JqquW3Pp_hPo2XK60SwnrooH62AUewfPXIGvRbiNiPzFoT4XBBEdnAf3Sh2bQo5uWvWw7jm5EgDKBFtY1PbWMDa-S8YQ");'></div>
+</div>
+</div>
+</div>
+</header>
+<main class="flex flex-1 justify-center py-6">
+<div class="w-full max-w-4xl space-y-4 px-4">
+<div class="space-y-1 text-center">
+<h1 class="text-4xl font-bold text-background-dark dark:text-background-light">Group Meeting Invitation</h1>
+<p class="text-lg text-background-dark/70 dark:text-background-light/70">You're invited to a group meeting at EPFL. Please find the details below:</p>
+</div>
+<div class="rounded-xl border border-primary/20 bg-white dark:bg-background-dark/50">
+<div class="divide-y divide-primary/20">
+<div class="grid grid-cols-1 gap-4 p-4 md:grid-cols-3">
+<p class="font-medium text-background-dark/70 dark:text-background-light/70">With</p>
+<p class="md:col-span-2 text-background-dark dark:text-background-light">Jane Doe, John Doe</p>
+</div>
+<div class="grid grid-cols-1 gap-4 p-4 md:grid-cols-3">
+<p class="font-medium text-background-dark/70 dark:text-background-light/70">Date</p>
+<p class="md:col-span-2 text-background-dark dark:text-background-light">November 12, 2025</p>
+</div>
+<div class="grid grid-cols-1 gap-4 p-4 md:grid-cols-3">
+<p class="font-medium text-background-dark/70 dark:text-background-light/70">Time</p>
+<p class="md:col-span-2 text-background-dark dark:text-background-light">2:00 PM - 3:00 PM</p>
+</div>
+<div class="grid grid-cols-1 gap-4 p-4 md:grid-cols-3">
+<p class="font-medium text-background-dark/70 dark:text-background-light/70">Location</p>
+<p class="md:col-span-2 text-background-dark dark:text-background-light">EPFL Campus, Building AAC, Room AAC120 </p>
+</div>
+</div>
+<div class="p-4">
+<div class="h-72 w-full rounded-lg bg-cover bg-center bg-no-repeat" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCphtVRbVDEvf0w-u1rtN7lFtzkfsaVj3Cq91GA0CaHwIyNeqp4nYtuE1K0QzncGIXwvUtsHtxW3qjvZ9ZHk_JKNzyyl-3cDjU1Tf5lwrWAalEHBg01eeXmr6OzxymFXOsqBiaI7SCIeuSoueCv3P7jilQ0EnUQ9K_CFS3KoATgWrqJxkNTiiH5hSzA7YczKI7cgyLTCkfiavasroiGu4nqYjv5ekeiiDRX6W8ZUzK-ZEBtIz-d0GyEV1h6w1TD84KidKr0dYn4GO4");'></div>
+</div>
+</div>
+<div class="flex flex-col items-center justify-center gap-2 sm:flex-row">
+<button class="flex h-10 w-full items-center justify-center rounded-lg bg-primary px-6 text-sm font-bold text-white transition-opacity hover:opacity-90 sm:w-auto">
+                Accept
+              </button>
+<button class="flex h-10 w-full items-center justify-center rounded-lg bg-primary/20 px-6 text-sm font-bold text-primary transition-colors hover:bg-primary/30 sm:w-auto dark:bg-primary/30 dark:hover:bg-primary/40">
+                Decline
+              </button>
+</div>
+</div>
+</main>
+</div>
+</div>
+
+</body></html>

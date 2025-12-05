@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Synapsis - Welcome to Network App</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#137fec",
+            "background-light": "#f6f7f8",
+            "background-dark": "#101922",
+            "foreground-light": "#111418",
+            "foreground-dark": "#e8eef3",
+            "card-light": "#ffffff",
+            "card-dark": "#1b2734",
+            "border-light": "#e3e7eb",
+            "border-dark": "#304050"
+          },
+          fontFamily: {
+            "display": ["Manrope", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings:
+      'FILL' 0,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 24
+    }
+  </style>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="flex flex-col min-h-screen">
+<header class="sticky top-0 z-10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm border-b border-subtle-light/20 dark:border-subtle-dark/20">
+<div class="container mx-auto px-6 sm:px-8 lg:px-12 max-w-6xl">
+<div class="flex items-center justify-between h-16">
+<div class="flex items-center gap-3">
+  <img src="logo.png" alt="Synapsis logo" class="w-8 h-8 object-contain" />
+  <h1 class="text-xl font-bold">Synapsis</h1>
+</div>
+<nav class="hidden md:flex items-center gap-6">
+<a class="text-sm font-bold text-primary" href="#">Home</a>
+<a class="text-sm font-medium text-subtle-light dark:text-subtle-dark hover:text-primary dark:hover:text-primary transition-colors" href="#">Meetings</a>
+<a class="text-sm font-medium text-subtle-light dark:text-subtle-dark hover:text-primary dark:hover:text-primary transition-colors" href="#">People</a>
+<a class="text-sm font-medium text-subtle-light dark:text-subtle-dark hover:text-primary dark:hover:text-primary transition-colors" href="#">Topics</a>
+</nav>
+<div class="flex items-center gap-3">
+<button class="flex items-center justify-center size-10 rounded-full bg-background-light dark:bg-background-dark hover:bg-primary/10 dark:hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined text-subtle-light dark:text-subtle-dark">notifications</span>
+</button>
+<div class="size-10 rounded-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCF0ahtj1Oldzv7-CmmUEMKhiVZ30h4njzeGMmLj9JLUZfqcYS1Fz90qadTVR5BUDaCl_xaNb1yFjK1IBFULmHiHtCJPebXSzy4xOAIjuGCjQW6SkCVbzhrSfoD-R3R6N7PoDGsehL8K3KETCC-QCkpndCG9lkWht0iDSov4GRlUfIXD41JqquW3Pp_hPo2XK60SwnrooH62AUewfPXIGvRbiNiPzFoT4XBBEdnAf3Sh2bQo5uWvWw7jm5EgDKBFtY1PbWMDa-S8YQ");'></div>
+</div>
+</div>
+</div>
+</header>
+<main class="flex flex-1 justify-center py-12 px-4 sm:px-6 lg:px-8">
+<div class="w-full max-w-2xl space-y-10">
+<div>
+<h1 class="text-3xl font-bold tracking-tight">Feedback</h1>
+<p class="mt-2 text-base text-foreground-light/70 dark:text-foreground-dark/70">Help us improve your networking experience.</p>
+</div>
+<form class="space-y-8">
+<fieldset>
+<legend class="text-lg font-bold mb-4">How useful was this meeting for your ongoing research?</legend>
+<div class="flex flex-wrap gap-3">
+<label class="flex items-center gap-3 cursor-pointer rounded-lg border border-subtle-light dark:border-subtle-dark px-4 py-3 has-[:checked]:bg-primary/10 has-[:checked]:border-primary dark:has-[:checked]:bg-primary/20 transition-all">
+<input class="form-radio h-4 w-4 text-primary focus:ring-primary focus:ring-offset-background-light dark:focus:ring-offset-background-dark border-subtle-light dark:border-subtle-dark bg-transparent" name="accuracy" type="radio"/>
+<span class="text-sm font-medium">Very useful</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer rounded-lg border border-subtle-light dark:border-subtle-dark px-4 py-3 has-[:checked]:bg-primary/10 has-[:checked]:border-primary dark:has-[:checked]:bg-primary/20 transition-all">
+<input class="form-radio h-4 w-4 text-primary focus:ring-primary focus:ring-offset-background-light dark:focus:ring-offset-background-dark border-subtle-light dark:border-subtle-dark bg-transparent" name="accuracy" type="radio"/>
+<span class="text-sm font-medium">Somewhat useful</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer rounded-lg border border-subtle-light dark:border-subtle-dark px-4 py-3 has-[:checked]:bg-primary/10 has-[:checked]:border-primary dark:has-[:checked]:bg-primary/20 transition-all">
+<input class="form-radio h-4 w-4 text-primary focus:ring-primary focus:ring-offset-background-light dark:focus:ring-offset-background-dark border-subtle-light dark:border-subtle-dark bg-transparent" name="accuracy" type="radio"/>
+<span class="text-sm font-medium">Not useful</span>
+</label>
+</div>
+</fieldset>
+<fieldset>
+<legend class="text-lg font-bold mb-4">How useful was this meeting for starting a future project?</legend>
+<div class="flex flex-wrap gap-3">
+<label class="flex items-center gap-3 cursor-pointer rounded-lg border border-subtle-light dark:border-subtle-dark px-4 py-3 has-[:checked]:bg-primary/10 has-[:checked]:border-primary dark:has-[:checked]:bg-primary/20 transition-all">
+<input class="form-radio h-4 w-4 text-primary focus:ring-primary focus:ring-offset-background-light dark:focus:ring-offset-background-dark border-subtle-light dark:border-subtle-dark bg-transparent" name="future_project" type="radio"/>
+<span class="text-sm font-medium">Very useful</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer rounded-lg border border-subtle-light dark:border-subtle-dark px-4 py-3 has-[:checked]:bg-primary/10 has-[:checked]:border-primary dark:has-[:checked]:bg-primary/20 transition-all">
+<input class="form-radio h-4 w-4 text-primary focus:ring-primary focus:ring-offset-background-light dark:focus:ring-offset-background-dark border-subtle-light dark:border-subtle-dark bg-transparent" name="future_project" type="radio"/>
+<span class="text-sm font-medium">Somewhat useful</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer rounded-lg border border-subtle-light dark:border-subtle-dark px-4 py-3 has-[:checked]:bg-primary/10 has-[:checked]:border-primary dark:has-[:checked]:bg-primary/20 transition-all">
+<input class="form-radio h-4 w-4 text-primary focus:ring-primary focus:ring-offset-background-light dark:focus:ring-offset-background-dark border-subtle-light dark:border-subtle-dark bg-transparent" name="future_project" type="radio"/>
+<span class="text-sm font-medium">Not useful</span>
+</label>
+</div>
+</fieldset>
+<fieldset>
+<legend class="text-lg font-bold mb-4">Did you enjoy the way the conversation took place?</legend>
+<div class="flex flex-wrap gap-3">
+<label class="flex items-center gap-3 cursor-pointer rounded-lg border border-subtle-light dark:border-subtle-dark px-4 py-3 has-[:checked]:bg-primary/10 has-[:checked]:border-primary dark:has-[:checked]:bg-primary/20 transition-all">
+<input class="form-radio h-4 w-4 text-primary focus:ring-primary focus:ring-offset-background-light dark:focus:ring-offset-background-dark border-subtle-light dark:border-subtle-dark bg-transparent" name="enjoyment" type="radio"/>
+<span class="text-sm font-medium">Yes</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer rounded-lg border border-subtle-light dark:border-subtle-dark px-4 py-3 has-[:checked]:bg-primary/10 has-[:checked]:border-primary dark:has-[:checked]:bg-primary/20 transition-all">
+<input class="form-radio h-4 w-4 text-primary focus:ring-primary focus:ring-offset-background-light dark:focus:ring-offset-background-dark border-subtle-light dark:border-subtle-dark bg-transparent" name="enjoyment" type="radio"/>
+<span class="text-sm font-medium">No</span>
+</label>
+</div>
+</fieldset>
+<div>
+<label class="text-lg font-bold mb-4 block" for="additional-feedback">Anything else you want to change in the future?</label>
+<textarea class="w-full rounded-lg border border-subtle-light dark:border-subtle-dark bg-background-light dark:bg-subtle-dark p-4 text-sm focus:border-primary focus:ring-primary focus:ring-opacity-50 transition placeholder:text-foreground-light/50 dark:placeholder:text-foreground-dark/50" id="additional-feedback" name="additional-feedback" placeholder="Enter your feedback here" rows="4"></textarea>
+</div>
+<div class="flex justify-end">
+<button class="flex min-w-[120px] items-center justify-center rounded-lg h-11 px-6 bg-primary text-white text-sm font-bold hover:bg-primary/90 transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 dark:focus:ring-offset-background-dark" type="submit">
+              Submit Feedback
+            </button>
+</div>
+</form>
+</div>
+</main>
+</div>
+
+</body></html>
