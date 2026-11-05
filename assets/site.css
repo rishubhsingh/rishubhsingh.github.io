@@ -53,14 +53,13 @@ a { color: var(--link); text-decoration: none; }
 a:hover { text-decoration: underline; }
 img { max-width: 100%; display: block; }
 
-.layout { display: flex; min-height: 100vh; }
+.layout { display: flex; min-height: 100vh; max-width: 1140px; margin: 0 auto; }
 
 /* ---------- Sidebar ---------- */
 .sidebar {
   width: 300px;
   flex-shrink: 0;
   border-right: 1px solid var(--border);
-  background: var(--bg-side);
 }
 .sidebar-inner {
   position: sticky;
@@ -222,7 +221,7 @@ a.pub-title:hover { text-decoration: none; color: var(--link); }
 /* ---------- Responsive ---------- */
 @media (max-width: 900px) {
   .layout { flex-direction: column; }
-  .sidebar { width: 100%; border-right: 0; border-bottom: 1px solid var(--border); }
+  .sidebar { width: 100%; border-right: 0; border-bottom: 1px solid var(--border); background: var(--bg-side); }
   .sidebar-inner { position: static; height: auto; padding: 32px 16px 24px; }
   .sidebar-links { flex-direction: row; flex-wrap: wrap; justify-content: center; align-items: center; max-width: none; gap: 8px 18px; }
   .theme-toggle { margin-top: 18px; }
