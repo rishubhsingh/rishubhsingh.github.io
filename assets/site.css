@@ -167,6 +167,7 @@ h3.year {
 a.pub-title:hover { text-decoration: none; color: var(--link); }
 .pub-authors { font-size: 14px; color: var(--muted); margin-top: 2px; }
 .pub-authors .me { color: var(--text); font-weight: 600; }
+.pub-authors .first { text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; }
 .pub-venue { font-size: 14px; color: var(--muted); margin-top: 2px; }
 .pub-links { margin-top: 6px; display: flex; flex-wrap: wrap; gap: 6px; }
 .pub-links a {
