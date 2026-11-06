@@ -68,8 +68,8 @@ img { max-width: 100%; display: block; }
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  padding: 40px 28px;
+  justify-content: flex-start;
+  padding: 56px 28px 40px;
   text-align: center;
 }
 .profile-photo {
